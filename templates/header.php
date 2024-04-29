@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
 </head>
 <body>
     <header>
@@ -31,7 +33,10 @@
                 <li><a href="<?= $BASE_URL; ?>contato.php" class="nav-link">Contato</a></li>
             </ul>
         </nav>
-        <button id="btn-legibilidade">Alterar legibilidade</button>
+        <div id="btns-legibilidade">
+            <button id="btn-aumentar" class="btns"><i class="fas fa-plus"></i></button>
+            <button id="btn-diminuir" class="btns"><i class="fas fa-minus"></i></button>
+        </div>
     </header>
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
@@ -43,3 +48,4 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>

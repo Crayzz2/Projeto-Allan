@@ -208,16 +208,25 @@ footer{
 .alta-legibilidade{
     font-size: +50px;
 }
-#btn-legibilidade{
+#btns-legibilidade{
     position: fixed;
-    right: 0px;
+    left: 0px;
+    bottom: 0px;
     padding: 10px;
     text-decoration: none;
     border: none;
     background-color: #121212;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
-
+.btns{
+    border: none;
+    padding: 5px;
+    margin-bottom: 2px;
+    background-color: white;
+}
 
 /* MOBILE */
 
