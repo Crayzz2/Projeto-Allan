@@ -23,11 +23,11 @@
 <body>
     <header>
         <a href="<?= $BASE_URL; ?>" id="logo">
-            <img src="<?= $BASE_URL; ?>/img/logo.svg" alt="Blog Codar">
+            <img src="<?= $BASE_URL; ?>/img/logo.svg" alt="Blog Codar" tabindex="1" onfocus="speakText(this.textContent)">
         </a>
         <nav>
             <ul id="navbar">
-                <li><a href="<?= $BASE_URL; ?>" class="nav-link">Home</a></li>
+                <li><a href="<?= $BASE_URL; ?>" class="nav-link" tabindex="2"   >Home</a></li>
                 <li><a href="#" class="nav-link">Categorias</a></li>
                 <li><a href="#" class="nav-link">Sobre</a></li>
                 <li><a href="<?= $BASE_URL; ?>contato.php" class="nav-link">Contato</a></li>
@@ -49,3 +49,4 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=CwQQbuKu"></script> -->

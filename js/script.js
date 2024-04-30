@@ -1,3 +1,14 @@
+function speakSelectedText() {
+    const selectedText = window.getSelection().toString();
+    if (selectedText) {
+        const utterance = new SpeechSynthesisUtterance(selectedText);
+        window.speechSynthesis.speak(utterance);
+    }
+}
+function speakText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+}
 
 fontSizeString = $("*").css("font-size")
 
@@ -19,4 +30,8 @@ $("#btn-diminuir").on('click', ()=>{
     $("#btn-aumentar").css("font-size", 16);
     $("#btn-diminuir").css("font-size", 16);
     $("i").css("font-size", 16);
+})  
+
+$("#text").on('click', ()=>{
+    speakText(this.textContent);
 })
