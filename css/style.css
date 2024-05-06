@@ -13,6 +13,10 @@ main{
     margin-bottom: 250px;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
 /* NAVBAR */
 #logo{
     position: absolute;

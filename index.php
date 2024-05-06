@@ -4,27 +4,26 @@
 
     <main>
         <div id="title-container">
-            <h1 tabindex="5">Blog Codar</h1>
-            <p tabindex="6  ">O seu blog de programação</p>
+            <h1><a href="" onfocus="speakText(this.textContent)">Blog Codar</a></h1>
+            <p><a href="" onfocus="speakText(this.textContent)">O seu blog de programação</a></p>
         </div>
         <div id="posts-container">
             <?php foreach($posts as $post): ?>
 
                 <div class="post-box">
-                    <img src="<?= $BASE_URL ?>/img/<?= $post['img']?>" alt="<?= $post['title']?>">
+                    <a href="" onfocus="speakText(this.getAttribute('alt'))" alt="<?= $post['descImg']?>"><img src="<?= $BASE_URL ?>/img/<?= $post['img']?>" alt="<?= $post['title']?>"></a>
                     <h2 class="post-title" >
-                        <a href="<?= $BASE_URL ?>post.php?id=<?= $post['id']?>"><?= $post['title']?></a>
+                        <a href="<?= $BASE_URL ?>post.php?id=<?= $post['id']?>" onfocus="speakText(this.textContent)"><?= $post['title']?></a>
                     </h2>
-                    <p class="post-description"><?= $post['description']?></p>
+                    <p class="post-description"><a href="" onfocus="speakText(this.textContent)"><?= $post['description']?></a></p>
                     <div class="tags-container">
                         <?php foreach($post['tags'] as $tag): ?>
-                            <a href="#"><?= $tag?></a>
+                            <a href="#" onfocus="speakText(this.textContent)"><?= $tag?></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
 
             <?php endforeach; ?>
-            <p id="text">Clique aqui para ouvir esta mensagem</p>
         </div>
     </main>
 

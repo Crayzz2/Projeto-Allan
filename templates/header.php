@@ -22,21 +22,18 @@
 </head>
 <body>
     <header>
-        <a href="<?= $BASE_URL; ?>" id="logo">
-            <img src="<?= $BASE_URL; ?>/img/logo.svg" alt="Blog Codar" tabindex="1" onfocus="speakText(this.textContent)">
+        <a href="<?= $BASE_URL; ?>" id="logo" alt="Blog Codar" onfocus="speakText(this.getAttribute('alt'))">
+            <img src="<?= $BASE_URL; ?>/img/logo.svg" alt="Blog Codar">
         </a>
+
         <nav>
             <ul id="navbar">
-                <li><a href="<?= $BASE_URL; ?>" class="nav-link" tabindex="2"   >Home</a></li>
-                <li><a href="#" class="nav-link">Categorias</a></li>
-                <li><a href="#" class="nav-link">Sobre</a></li>
-                <li><a href="<?= $BASE_URL; ?>contato.php" class="nav-link">Contato</a></li>
+                <li><a href="<?= $BASE_URL; ?>" class="nav-link" onfocus="speakText(this.textContent)">Home</a></li>
+                <li><a href="#" class="nav-link" onfocus="speakText(this.textContent)">Categorias</a></li>
+                <li><a href="#" class="nav-link" onfocus="speakText(this.textContent)">Sobre</a></li>
+                <li><a href="<?= $BASE_URL; ?>contato.php" class="nav-link" onfocus="speakText(this.textContent)">Contato</a></li>
             </ul>
         </nav>
-        <div id="btns-legibilidade">
-            <button id="btn-aumentar" class="btns"><i class="fas fa-plus"></i></button>
-            <button id="btn-diminuir" class="btns"><i class="fas fa-minus"></i></button>
-        </div>
     </header>
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
