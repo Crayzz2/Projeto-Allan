@@ -31,7 +31,3 @@ $("#btn-diminuir").on('click', ()=>{
     $("#btn-diminuir").css("font-size", 16);
     $("i").css("font-size", 16);
 })  
-
-$("#text").on('click', function() {
-    speakText(this.textContent);
-});

@@ -46,4 +46,3 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=CwQQbuKu"></script> -->

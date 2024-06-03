@@ -232,6 +232,14 @@ footer{
     background-color: white;
 }
 
+#acessibilidade_cegos{
+    position: fixed;
+    top: 53%;
+    right: 10px;
+    width: 40px;
+    border-radius: 25%;
+
+}
 /* MOBILE */
 
 @media(max-width: 480px){

@@ -7,7 +7,7 @@
       'description' => 'Neste post você vai aprender tudo que precisa para ser um bom programador de PHP!',
       'tags' => ['programação', 'PHP', 'lógica de programação'],
       'img' => 'prog-1.jpg',
-      'descImg' => 'Programador sentado na frente de quarto telas'
+      'descImg' => 'Programador sentado na frente de quatro telas'
     ],
     [
       'id' => 2,
